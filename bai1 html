@@ -1,0 +1,157 @@
+<!doctype html>
+
+<title>Biểu mẫu khảo sát ITviec</title>
+<style>
+  body {
+    background: #1db954;
+    font-family: Arial;
+  }
+
+  .form-box {
+    width: 400px;
+    background: #ddd;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 8px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border-radius: 4px;
+    border: 1px solid #999;
+  }
+
+  .group {
+    margin-bottom: 10px;
+  }
+
+  .inline {
+    width: auto;
+  }
+
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .submit-btn {
+    background: #007bff;
+    color: white;
+  }
+
+  .reset-btn {
+    background: red;
+    color: white;
+    margin-left: 8px;
+  }
+</style>
+Biểu mẫu khảo sát ITviec
+  <form id="myForm">
+    <div class="group">
+      <label>Họ tên</label>
+      <input type="text" placeholder="Nhập tên của bạn" required />
+    </div>
+
+    <div class="group">
+      <label>Email</label>
+      <input type="email" placeholder="Nhập email của bạn" required />
+    </div>
+
+    <div class="group">
+      <label>Ngày sinh</label>
+      <input type="date" required />
+    </div>
+
+    <div class="group">
+      <label>Hiện tại bạn đang là?</label>
+      <select>
+        <option>Học sinh/Sinh viên</option>
+        <option>Đi làm</option>
+        <option>Khác</option>
+      </select>
+    </div>
+
+    <div class="group">
+      <label>Bạn có giới thiệu ITviec với bạn bè chưa?</label><br />
+      <input type="radio" name="like" class="inline" /> Có <br />
+      <input type="radio" name="like" class="inline" /> Không <br />
+      <input type="radio" name="like" class="inline" /> Có thể
+    </div>
+
+    <div class="group">
+      <label>Ngôn ngữ lập trình / Framework bạn đã biết?</label><br />
+      <input type="checkbox" class="inline" /> C <br />
+      <input type="checkbox" class="inline" /> C++ <br />
+      <input type="checkbox" class="inline" /> C# <br />
+      <input type="checkbox" class="inline" /> Java <br />
+      <input type="checkbox" class="inline" /> Python
+    </div>
+
+    <div class="group">
+      <label>Bạn có câu hỏi gì không?</label>
+      <textarea placeholder="Nhập câu hỏi của bạn"></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+    <button type="button" class="reset-btn" onclick="resetForm()">
+      Reset
+    </button>
+  </form>
+</div>
+
+<script>
+  function resetForm() {
+    if (confirm("Bạn có chắc muốn xóa toàn bộ dữ liệu không?")) {
+      document.getElementById("myForm").reset();
+      alert("Đã xóa dữ liệu!");
+    }
+  }
+</script>
+About
+No description, website, or topics provided.
+Resources
+ Readme
+ Activity
+Stars
+ 0 stars
+Watchers
+ 0 watching
+Forks
+ 0 forks
+Report repository
+Releases
+No releases published
+Deployments
+8
+ github-pages last month
++ 7 deployments
+Packages
+No packages published
+Contributors
+1
+@NguyenTuanTu
+NguyenTuanTu
+Languages
+HTML
+96.9%
+ 
+CSS
+3.1%
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Statu
